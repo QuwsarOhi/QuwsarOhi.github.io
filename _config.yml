@@ -90,6 +90,9 @@ footer:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook"
       url: "https://facebook.com/ohi.quwsar"
+    - label: "Mail"
+      icon: "fab fa-fw fa-mail"
+      url: "mailto:quwsarohi@gmail.com"
 
 defaults:
   # _posts
