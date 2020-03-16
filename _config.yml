@@ -91,7 +91,7 @@ footer:
       icon: "fab fa-fw fa-facebook"
       url: "https://facebook.com/ohi.quwsar"
     - label: "Mail"
-      icon: "fab fa-fw fa-mail"
+      icon: "far fa-envelope"
       url: "mailto:quwsarohi@gmail.com"
 
 defaults:
