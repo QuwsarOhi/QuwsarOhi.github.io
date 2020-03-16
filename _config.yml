@@ -65,11 +65,11 @@ plugins:
 author:
   name   : "Abu Quwsar Ohi"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Passionate problem solver in different field of Computer Science."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://quwsarohi.github.io"
+    #- label: "Website"
+    #  icon: "fas fa-fw fa-link"
+    #  url: "https://quwsarohi.github.io"
     #- label: "Twitter"
     #  icon: "fab fa-fw fa-twitter-square"
     #  url: "https://twitter.com/"
@@ -82,15 +82,16 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    #- label: "Twitter"
+    #  icon: "fab fa-fw fa-twitter-square"
+    #  url: "https://twitter.com/"
+    #- label: "GitHub"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/QuwsarOhi"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://facebook.com/ohi.quwsar"
 
 defaults:
   # _posts
