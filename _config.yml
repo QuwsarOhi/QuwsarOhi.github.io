@@ -87,7 +87,7 @@ footer:
     #  icon: "fab fa-fw fa-twitter-square"
     #  url: "https://twitter.com/"
     #- label: "GitHub"
-    - label: "Dhaka - Bangladesh"
+    - label: "Dhaka-Bangladesh"
       icon: "fas fa-map-marker-alt"
       url: "#"
     - label: "GitHub"
