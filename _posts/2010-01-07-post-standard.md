@@ -13,13 +13,16 @@ All children, except one, grow up. They soon know that they will grow up, and th
 
 Mrs. Darling first heard of Peter when she was tidying up her children's minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.
 
-{% highlight css %}
-#container {
-    float: left;
-    margin: 0 -240px 0 0;
-    width: 100%;
-}
+{% highlight html %}
+<form action="action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
 {% endhighlight %}
+
 
 <!--more-->
 
