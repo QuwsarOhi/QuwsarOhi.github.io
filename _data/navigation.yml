@@ -1,11 +1,11 @@
 main:
-  #- title: "Posts"
-  #  url: /posts/
-  #- title: "Categories"
-  #  url: /categories/
-  #- title: "Tags"
-  #  url: /tags/
+  - title: "Posts"
+    url: /posts/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  #- title: "Deep Learning"
+  #  url: /deeplearning/
   - title: "Résumé"
     url: /assets/data/QuwsarOhi_CV.pdf #/about/
-  - title: "Deep Learning"
-    url: /deeplearning/
