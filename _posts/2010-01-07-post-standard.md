@@ -13,6 +13,14 @@ All children, except one, grow up. They soon know that they will grow up, and th
 
 Mrs. Darling first heard of Peter when she was tidying up her children's minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.
 
+{% highlight css %}
+#container {
+    float: left;
+    margin: 0 -240px 0 0;
+    width: 100%;
+}
+{% endhighlight %}
+
 <!--more-->
 
 This post has a manual excerpt `<!--more-->` set after the second paragraph. The following YAML Front Matter has also be applied:
