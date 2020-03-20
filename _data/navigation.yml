@@ -5,5 +5,7 @@ main:
   #  url: /categories/
   #- title: "Tags"
   #  url: /tags/
-  - title: "About Me"
+  - title: "Résumé"
     url: /assets/data/QuwsarOhi_CV.pdf #/about/
+  - title: "Deep Learning"
+    url: /deeplearning/
