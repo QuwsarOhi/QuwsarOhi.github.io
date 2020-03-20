@@ -20,14 +20,17 @@ email: quwsarohi@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   On the way to Artificial Intelligence.
 
+
 #twitter_username: username
 github_username: QuwsarOhi
 minimal_mistakes_skin: dark
 search: true
 
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+
 
 # Outputting
 permalink: /:categories/:title/
@@ -117,6 +120,7 @@ defaults:
       layout: single
       author_profile: true
 
+
 category_archive:
   type: liquid
   path: /categories/
@@ -124,18 +128,19 @@ tag_archive:
   type: liquid
   path: /tags/
 
+
 comments:
   provider: "facebook"
   facebook:
     appid: # optional
     num_posts: 5 #(default)
-    colorscheme: "light" #(default), "dark"
+    colorscheme: "dark" #(default), "dark"
 
-sidebar:
-  - title: "Title"
-    image: http://placehold.it/350x250
-    image_alt: "image"
-    text: "Some text here."
-  - title: "Another Title"
-    text: "More text here."
-    nav: sidebar-sample
+#sidebar:
+#  - title: "Title"
+#    image: http://placehold.it/350x250
+#    image_alt: "image"
+#    text: "Some text here."
+#  - title: "Another Title"
+#    text: "More text here."
+#    nav: sidebar-sample
