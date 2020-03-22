@@ -7,7 +7,6 @@ tags:
   - Deep Learning Series
   - Artificial Intelligence
   - Mathematical Intuition
----
 
 excerpt: "This post should [...]"
 header:
@@ -17,6 +16,8 @@ header:
   actions:
     - label: "More Info"
       url: "https://unsplash.com"
+
+---
 
 Deep Learning Series - 1: Introduction to Deep Learning
 
