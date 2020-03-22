@@ -19,9 +19,6 @@ header:
 
 ---
 
-Deep Learning Series - 1: Introduction to Deep Learning
-
-
 This deep learning series will furnish you with mathematical and implementation (with framework) skill-sets. The series will disscuss required mathematical topics and will get to more complex mathematics and deep learning network implementations in the future. This series will NOT discuss the mostly available topics over the internet. Although, it may be guaranteed that if you continue to practice along with this series, you will get a fundamental intuition of the mathematics and implementation of deep learning techniques.
 
 Deep learning is currently the most advanced method of Artificial Intelligence system. Deep learning technologies can identify and provide predictions which may be more accurate than human beings. As the internet is full of "what is deep learning" theories, we will directly jump to the terminologies that are required to understand how it works:
