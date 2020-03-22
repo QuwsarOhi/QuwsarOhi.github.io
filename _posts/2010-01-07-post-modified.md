@@ -12,8 +12,9 @@ tags:
 
 
 header:
+  excerpt: ""
   overlay_image: /assets/images/unsplash_dl_cover.jpg
-  overlay_filter: 0.5 		# same as adding an opacity of 0.5 to a black background
+  overlay_filter: 0.0 		# same as adding an opacity of 0.5 to a black background
   caption: "[**Photo by Natasa Grabovac on Unsplash**](https://unsplash.com/photos/y7cHrP9UPw4)"
 
 ---
