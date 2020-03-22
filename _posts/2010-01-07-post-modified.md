@@ -1,14 +1,34 @@
 ---
-title: "Post: Modified Date"
+title: "Deep Learning Series - 1: Introduction to Deep Learning"
 last_modified_at: 2016-03-09T16:20:02-05:00
 categories:
-  - Blog
+  - Tutorial
 tags:
-  - Post Formats
-  - readability
-  - standard
+  - Deep Learning Series
+  - Artificial Intelligence
+  - Mathematical Intuition
 ---
 
-This post has been updated and should show a modified date if used in a layout.
+excerpt: "This post should [...]"
+header:
+  overlay_image: /assets/images/unsplash-image-1.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**Photo by Franck V. on Unsplash**](https://unsplash.com/photos/U3sOwViXhkY)"
+  actions:
+    - label: "More Info"
+      url: "https://unsplash.com"
 
-All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, "Oh, why can't you remain like this for ever!" This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.
+Deep Learning Series - 1: Introduction to Deep Learning
+
+
+This deep learning series will furnish you with mathematical and implementation (with framework) skill-sets. The series will disscuss required mathematical topics and will get to more complex mathematics and deep learning network implementations in the future. This series will NOT discuss the mostly available topics over the internet. Although, it may be guaranteed that if you continue to practice along with this series, you will get a fundamental intuition of the mathematics and implementation of deep learning techniques.
+
+Deep learning is currently the most advanced method of Artificial Intelligence system. Deep learning technologies can identify and provide predictions which may be more accurate than human beings. As the internet is full of "what is deep learning" theories, we will directly jump to the terminologies that are required to understand how it works:
+
+* **Prediction:** Predictions are the answers which a deep learning method is willing to find and generates as outputs. There are two types of prediction techniques depending on the predictions: a) Regression and b) Classification. Please have a search on google to understand the basics of these two techniques.
+
+* **Deep Learning Model:** The deep learning models are the mathematical architecture of the deep learning "machine" that will perform the predictions. Deep learning models are also mentioned as deep learning architectures. The present advanced deep learning models are getting more complex, but they are also reaching higher accuracy.
+
+* **Accuracy:** Accuracy is a percentage that defines the correctness of a deep learning model. A higher accuracy states that the deep learning model gives more accurate results or predictions.
+
+* **Error/Loss/Crossentropy Loss:**
