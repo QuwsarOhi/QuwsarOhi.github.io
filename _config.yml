@@ -90,7 +90,7 @@ author:
       icon: "fab fa-researchgate"
       url: "https://www.researchgate.net/profile/Abu_Ohi"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fa fa-github" #"fab fa-fw fa-github"
       url: "https://github.com/QuwsarOhi"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook"
