@@ -114,7 +114,7 @@ footer:
       icon: "far fa-envelope"
       url: "mailto:quwsarohi@gmail.com"
 
-defaults:
+#defaults:
   # _posts
   #-------
   #- scope:
@@ -146,12 +146,12 @@ defaults:
 #  path: /tags/
 
 
-comments:
-  provider: "facebook"
-  facebook:
-    appid: # optional
-    num_posts: 5 #(default)
-    colorscheme: "dark" #(default), "dark"
+#comments:
+#  provider: "facebook"
+#  facebook:
+#    appid: # optional
+#    num_posts: 5 #(default)
+#    colorscheme: "dark" #(default), "dark"
 
 #sidebar:
 #  - title: "Title"
