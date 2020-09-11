@@ -69,7 +69,7 @@ plugins:
 author:
   name   : "Abu Quwsar Ohi"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Student, Bangladesh University of Business and Technology."
+  bio    : "Research Assistant, Bangladesh University of Business and Technology."
   links:
     #- label: "Website"
     #  icon: "fas fa-fw fa-link"
@@ -77,6 +77,9 @@ author:
     #- label: "Twitter"
     #  icon: "fab fa-fw fa-twitter-square"
     #  url: "https://twitter.com/"
+    - label: "Orcid"
+      icon: "fab fa-orcid"
+      url: "https://orcid.org/0000-0001-7375-9040"
     - label: "Dhaka-Bangladesh"
       icon: "fas fa-map-marker-alt"
       url: "#"
