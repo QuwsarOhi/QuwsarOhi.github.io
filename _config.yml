@@ -113,6 +113,9 @@ footer:
     - label: "Mail"
       icon: "far fa-envelope"
       url: "mailto:quwsarohi@gmail.com"
+    - label: "Last updated: September 12, 2020"
+      icon: "fa fa-clock-o"
+      url: "#"
 
 #defaults:
   # _posts
