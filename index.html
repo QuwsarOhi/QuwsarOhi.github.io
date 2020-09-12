@@ -43,64 +43,171 @@ author_profile: true
     font-size: 14px;
 }
 
+.article{
+    clear:both;
+    display:block;
+    float:center;
+    margin-top:0.7em;
+    margin-bottom:0.7em;
+    margin-left:0em;
+    margin-right:0em;
+    overflow:hidden;
+}
+
+.title{
+    float:left;
+    font-size:1.0em;
+}
+
+.conf{
+    float:right;
+    text-align:right;
+}
+
+.author_list{
+    margin-left:0em;
+    clear:both;
+    display:block;
+    font-weight:200;
+    font-size:0.9em;
+}
+
+.link_list{
+    margin-left:0em;
+    clear:both;
+    display:block;
+}
+
+.link{
+    list-style:none;
+    float:left;
+    margin-right:1.5em;
+    display:inline;
+}
+
+.abstract{
+    clear:both;
+    display:none;
+    margin-left:1.0em;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+
+.abstract p{
+    text-align:justify;
+    text-justify:auto;
+}
+
+hr {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
 p {
     font-size: 14px;
     margin-top: 3px;
     margin-bottom: 6px;
 }
 
-ul { 
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -15px;
     display: inline-block; 
-    text-align: left; 
+    text-align: left;
+    font-size: small;
 }
 
 </style>
 </head>
 <body>
 
-<div class="section">Interests</div><hr>
-<small>
-<li>Deep Learning</li>
-<li>Computer Vision</li>
-<li>Pattern Recognition</li>
-<li>Algorithms</li>
-</small>
+<div class="section">Interests</div>
+<hr>
+<ul>
+    <li>Deep Learning</li>
+    <li>Computer Vision</li>
+    <li>Pattern Recognition</li>
+    <li>Algorithms</li>
+    <li>Research & Development</li>
+</ul>
+
 
 
 <div class="section">Experience</div><hr>
 <div class='subh'>Research Assistant</div>
 <div class='sub'>Bangladesh University of Business and Technology</div>
-<small>
-<ul>
-<li>Researching new architectural and mathematical strategies to reduce the current limit of deep learning based approaches.</li>
-<li>Developing and improving handwriting recognition systems to classify writers based on their handwriting.</li>
-<li>Researching and developing real-world speaker recognition systems.</li>
-</ul>
-</small>
+<small><ul>
+    <li>Researching new architectural and mathematical strategies to reduce the current limit of deep learning based approaches.</li>
+    <li>Developing and improving handwriting recognition systems to classify writers based on their handwriting.</li>
+    <li>Researching and developing real-world speaker recognition systems.</li>
+</ul></small>
 
-<br>
+
 
 <div class="section">Volunteer Experience</div><hr>
 <div class='subh'>Problem Setter & Judge</div>
 <div class='sub'>Bangladesh University of Business and Technology</div>
 <p>
     <i class="fa fa-calendar" aria-hidden="true"></i>
-From 2019 - Present
+    From 2019 - Present
 </p>
-<small>
-<li>Will fill up later</li>
-</small>
+<small><ul>
+    <li>Will fill up later</li>
+</ul></small>
+
 
 <div class='subh'>Conveiner</div>
 <div class='sub'>Competitive Programming Community (BUBT)</div>
-<p><i class="fa fa-calendar" aria-hidden="true"></i>
-From 2019 - Present</p>
-<small>
-<li>Will fill up later</li>
-</small>
+<p>
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    From 2019 - Present
+</p>
+<small><ul>
+    <li>Will fill up later</li>
+</ul></small>
 
 
+<!-- Publications -->
 
+<div class="article">
+    <div class="title">
+        This is a test
+    </div>      
+    
+    <div class="conf">
+    <a href="#"
+       target="_blank">NONEONE</a>
+    </div>
+
+    <div class="author_list">
+    with
+    <span class="authors">
+      Ohi et al.
+      </span>
+    </div>
+
+    <div class="link_list">
+    <div class="link">
+        <a href="javascript:toggle('abstract25')">Abstract</a>
+    </div>
+    <div class="link">
+      <a href="#"
+      target="_blank">Conference</a>
+    </div>
+    <div class="link">
+      <a
+      href="#"
+      target="_blank">arXiv</a>
+    </div>
+    </div>
+    
+    <div id="abstract25" class="abstract">
+      <p>
+        Someting
+      </p>
+    </div>
+    </div><!--article ends-->
 
 </body>
 </html>
