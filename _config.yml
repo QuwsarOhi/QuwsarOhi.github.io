@@ -69,7 +69,7 @@ plugins:
 author:
   name   : "Abu Quwsar Ohi"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Research Assistant,<br>Bangladesh University<br>of Business & Technology."
+  bio    : "Research Assistant,<br>Bangladesh University of Business & Technology."
   links:
     #- label: "Website"
     #  icon: "fas fa-fw fa-link"
