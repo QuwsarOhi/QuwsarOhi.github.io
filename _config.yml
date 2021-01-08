@@ -21,12 +21,12 @@ og_image: /assets/images/site-logo.jpg
 # link: https://unsplash.com/photos/0n70cnyOFgc
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Towards Computer Science.
+  Towards Computer Science
 
 
 #twitter_username: username
 github_username: QuwsarOhi
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: contrast
 search: false
 
 
