@@ -29,7 +29,7 @@ author_profile: true
     margin-bottom: 0px;
 }
 .sub {
-    color: #BEBEBE;
+    color: #0a0808;
     font-size: 18px;
     margin-top: 0px;
     margin-bottom: 6px;
@@ -127,7 +127,7 @@ ul list {
 
 hr {
     margin-top: 2px;
-    margin-bottom: 2px;
+    margin-bottom: 3.5px;
 }
 
 p {
@@ -144,6 +144,27 @@ table, th, td {
 td {
     padding: 0;
     margin: 0;
+}
+
+/* Dashed border */
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
 }
 
 </style>
@@ -163,19 +184,20 @@ td {
 </SCRIPT>
 
 <div class="section">Interests</div>
-<hr>
+<hr class="solid">
 <ul><div style="margin: 0px 0px 0px -20px; font-size: 18px;">
-    <li>Research & development</li>
     <li>Deep learning</li>
     <li>Computer vision</li>
+    <li>Reinforcement learning</li>
     <li>Pattern recognition</li>
+    <li>Research & development</li>
     <li>Algorithms</li>
 </div></ul>
 
 
 <br>
 
-<div class="section">Experience</div><hr>
+<div class="section">Experience</div><hr class="solid">
 
 <div class="subh">Research assistant</div>
     <div class="sub">Bangladesh University of Business and Technology</div>
@@ -191,7 +213,7 @@ td {
 
 
 <br>
-<div class="section">Volunteer experience</div><hr>
+<div class="section">Volunteer experience</div><hr class="solid">
 
 <div class='subh'>Problem setter & judge</div>
     <div class='sub'>Bangladesh University of Business and Technology</div>
@@ -219,9 +241,9 @@ td {
 <br>
 
 <!-- Publications -->
-<div class="section">Publications</div>
+<div class="section">Publications</div><hr class="solid">
 <div class="article">
-<div class='subh'>Journals</div><hr>
+<div class='subh'>Journals</div><hr class="dashed">
     <div class="subsub">
         AutoEmbedder: A semi-supervised DNN embedding system for clustering
     </div>      
@@ -263,7 +285,7 @@ td {
     </div>
 
     <div id="epidemic" class="abstract"><p>
-        Pandemic defines the global outbreak of a disease that is caused due to some disease containing a high transmission rate. The impact of a pandemic situation can be lessened by restricting the movement of the mass. However, one of its concomitant circumstances is an economic crisis. In this article, we demonstrate what actions an agent (trained using reinforcement learning) may take in different possible scenarios of a pandemic depending on the spread of disease and economic factors. To train the agent, we design a virtual pandemic scenario closely related to the present COVID-19 crisis. Then, we apply reinforcement learning, a branch of artificial intelligence, that deals with how an individual (human/machine) should interact on an environment (real/virtual) to achieve the cherished goal. Finally, we demonstrate what optimal actions the agent perform to reduce the spread of disease while considering the economic factors. In our experiment, we let the agent find an optimal solution without providing any prior knowledge. After training, we observed that the agent places a long length lockdown to reduce the first surge of a disease. Furthermore, the agent places a combination of cyclic lockdowns and short length lockdowns to halt the resurgence of the disease. Analyzing the agent's performed actions, we discover that the agent decides movement restrictions not only based on the number of the infectious population but also considering the reproduction rate of the disease. The estimation and policy of the agent may improve the human-strategy of placing lockdown so that an economic crisis may be avoided while mitigating an infectious disease.
+        Pandemic defines the global outbreak of a disease having a high transmission rate. The impact of a pandemic situation can be lessened by restricting the movement of the mass. However, one of its concomitant circumstances is an economic crisis. In this article, we demonstrate what actions an agent (trained using reinforcement learning) may take in different possible scenarios of a pandemic depending on the spread of disease and economic factors. To train the agent, we design a virtual pandemic scenario closely related to the present COVID-19 crisis. Then, we apply reinforcement learning, a branch of artificial intelligence, that deals with how an individual (human/machine) should interact on an environment (real/virtual) to achieve the cherished goal. Finally, we demonstrate what optimal actions the agent perform to reduce the spread of disease while considering the economic factors. In our experiment, we let the agent find an optimal solution without providing any prior knowledge. After training, we observed that the agent places a long length lockdown to reduce the first surge of a disease. Furthermore, the agent places a combination of cyclic lockdowns and short length lockdowns to halt the resurgence of the disease. Analyzing the agent’s performed actions, we discover that the agent decides movement restrictions not only based on the number of the infectious population but also considering the reproduction rate of the disease. The estimation and policy of the agent may improve the human-strategy of placing lockdown so that an economic crisis may be avoided while mitigating an infectious disease.
     </p></div>
 
 <br><br>
@@ -335,7 +357,7 @@ td {
     </p></div>
 
 <br><br>
-<div class='subh'>Conferences</div><hr>
+<div class='subh'>Conferences</div><hr class="dashed">
     <div class="subsub">
         Human Abnormality Detection Based on Bengali Text
     </div>
@@ -371,7 +393,7 @@ td {
         <a href="javascript:toggle('lowres')">Abstract</a>
     </div>
     <div class="link">
-      <a href="#" target="_blank" rel="noopener noreferrer">Conference will held on Dec 15, 2020</a>
+      <a href="https://arxiv.org/abs/2101.00686" target="_blank" rel="noopener noreferrer">arXiv</a>
     </div>
     <!--<div class="link">
       <a href="#" target="_blank" rel="noopener noreferrer">Conference</a>
@@ -382,7 +404,7 @@ td {
     </p></div>
 
 <br><br>
-<div class='subh'>Book Chapters</div><hr>
+<div class='subh'>Book Chapters</div><hr class="dashed">
     <div class="subsub">
         A Multi-Plant Disease Diagnosis Method using Convolutional Neural Network
     </div>
@@ -406,7 +428,7 @@ td {
     </p></div>
 
 <br><br>
-<div class='subh'>Datasets</div><hr>
+<div class='subh'>Datasets</div><hr class="dashed">
     <div class="subsub">
             BanglaWriting: A multi-purpose offline Bangla handwriting dataset
         </div>      
@@ -446,36 +468,11 @@ td {
         <div id="abnormalitydata" class="abstract"><p>
             The dataset contained sentences with appropriate labels (normal/abnormal). Multiple specialists appropriately classified the sentences of the dataset. The dataset is generated in a CSV format. The CSV file contains two columns, "Abnormality" and "Sentence". Each Bengali sentence contains two target values, 1 (abnormal) or 0 (normal). The dataset comprises 14414 Bengali sentences, where 14312 sentences are normal, and 102 sentences are abnormal. For more details, please inspect the source paper of the dataset.
         </p></div>
-
-
-<!--<br><br>
-<div class='subh'>Preprints</div><hr>
-
-    <div class="subsub">
-        Exploring Optimal Control of Epidemic Spread Using Reinforcement Learning
-    </div>      
-    <div class="author_list">
-        <span class="authors">
-            Abu Quwsar Ohi, M.F.Mridha, Muhammad Mostafa Monowar, Md. Abdul Hamid
-        </span>
-    </div>
-    <div class="link">
-        <a href="javascript:toggle('epidemic')">Abstract</a>
-    </div>
-    <div class="link">
-      <a href="https://doi.org/10.21203/rs.3.rs-48613/v1" target="_blank" rel="noopener noreferrer">ResearchSquare</a>
-    </div>
-
-    <div id="epidemic" class="abstract"><p>
-        Pandemic defines the global outbreak of a disease that is caused due to some disease containing a high transmission rate. The impact of a pandemic situation can be lessened by restricting the movement of the mass. However, one of its concomitant circumstances is an economic crisis. In this article, we demonstrate what actions an agent (trained using reinforcement learning) may take in different possible scenarios of a pandemic depending on the spread of disease and economic factors. To train the agent, we design a virtual pandemic scenario closely related to the present COVID-19 crisis. Then, we apply reinforcement learning, a branch of artificial intelligence, that deals with how an individual (human/machine) should interact on an environment (real/virtual) to achieve the cherished goal. Finally, we demonstrate what optimal actions the agent perform to reduce the spread of disease while considering the economic factors. In our experiment, we let the agent find an optimal solution without providing any prior knowledge. After training, we observed that the agent places a long length lockdown to reduce the first surge of a disease. Furthermore, the agent places a combination of cyclic lockdowns and short length lockdowns to halt the resurgence of the disease. Analyzing the agent's performed actions, we discover that the agent decides movement restrictions not only based on the number of the infectious population but also considering the reproduction rate of the disease. The estimation and policy of the agent may improve the human-strategy of placing lockdown so that an economic crisis may be avoided while mitigating an infectious disease.
-    </p></div>
-
--->
 </div><br> 
 
 
 <div class="section">Frameworks</div>
-<hr>
+<hr class="solid">
 <table style="font-size:18px">
     <tr>
         <td>Python </td>
@@ -496,7 +493,7 @@ td {
 <br>
 
 <div class="section">Acquainted With</div>
-<hr>
+<hr class="solid">
 <table style="font-size:18px">
     <tr>
         <td>Linux</td>
@@ -517,7 +514,7 @@ td {
 <br>
 
 <div class="section">Competitive programming</div>
-<hr>
+<hr class="solid">
 <ul><div style="margin: 0px 0px 0px -20px; font-size: 17px;">
     <li>Attended international and national collegiate programming contests (ICPC, NCPC) and placed among the top <a href="https://algo.codemarshal.org/contests/mist-ncpc-2020/standings" target="_blank" rel="noopener noreferrer">31</a>. </li>
     <li> Total five times champion in Intra University Programming Contest (three individuals and two team-based). </li>
@@ -533,7 +530,7 @@ td {
 <br>
 
 <div class="section">Personal projects</div>
-<hr>
+<hr class="solid">
 <div class="subh"><a href="https://github.com/QuwsarOhi/plagIT">plagIT</a></div>
 <div class="sub">A plagiarism checker for programming languages</div>
 <div class="subsubsub">plugIT is a plagiarism checker that checks for plagiarism based on the lexical changes of two scripts. plagIT currently supports plagiarism check on C, C++, Python, and Java.</div>
