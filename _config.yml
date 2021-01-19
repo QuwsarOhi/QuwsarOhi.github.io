@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 
 #twitter_username: username
-github_username: QuwsarOhi
+#github_username: QuwsarOhi
 minimal_mistakes_skin: contrast
 search: false
 
@@ -86,6 +86,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-linkedin-in"
       url: "https://www.linkedin.com/in/quwsarohi/"
+    - label: "Scholar"
+      icon: "/assets/icons/google-scholar.svg"
+      url: "https://scholar.google.com/citations?user=PZxOxw8AAAAJ&hl=en"
     - label: "Orcid"
       icon: "fab fa-orcid"
       url: "https://orcid.org/0000-0001-7375-9040"
@@ -110,9 +113,9 @@ footer:
     - label: "Orcid"
       icon: "fab fa-orcid"
       url: "https://orcid.org/0000-0001-7375-9040"
-    - label: "Last updated: Jan 8, 2021"
-      icon: "fa fa-clock-o"
-      url: "#"
+    #- label: "Last updated: Jan 8, 2021"
+    #  icon: "fa fa-clock-o"
+    #  url: "#"
 
 
 
