@@ -87,7 +87,7 @@ author:
       icon: "fab fa-linkedin-in"
       url: "https://www.linkedin.com/in/quwsarohi/"
     - label: "Scholar"
-      icon: "/assets/icons/google-scholar.svg"
+      icon: "./assets/icons/google-scholar.svg"
       url: "https://scholar.google.com/citations?user=PZxOxw8AAAAJ&hl=en"
     - label: "Orcid"
       icon: "fab fa-orcid"
