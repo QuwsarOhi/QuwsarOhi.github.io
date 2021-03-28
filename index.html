@@ -74,6 +74,7 @@ header:
 }
 
 .article{
+    padding-bottom: 10px;
     clear:both;
     display:block;
     float:center;
@@ -92,7 +93,9 @@ header:
 
 .author_list{
     color: #444;
-    margin-left:0em;
+    margin-left: 0em;
+    margin-bottom: 0em;
+    padding-bottom: 0em;
     clear:both;
     display:block;
     font-weight:200;
@@ -108,6 +111,8 @@ header:
 .link{
     list-style:none;
     font-size: 14px;
+    margin-top: 0px;
+    padding-top: 0px;
     margin-right:1.5em;
     display:inline;
 }
@@ -115,7 +120,8 @@ header:
 .abstract{
     clear:both;
     display:none;
-    margin-left:1.0em;
+    padding: 10px;
+    margin-left: 1.0em;
 }
 
 .image {
@@ -224,8 +230,17 @@ list, ul {
       document.getElementById(aa).style.display='none';
     }
   }
-</SCRIPT>
 
+  function printPreview() {
+     var aTags = document.getElementsByTagName('a');
+     var atl = aTags.length;
+     var i;
+
+     for (i = 0; i < atl; i++) {
+        **aTags[i].removeAttribute("href");**
+     }  
+  }
+</SCRIPT>
 
     <div class="section">Research Interests</div>
     <hr class="solid">
@@ -279,9 +294,7 @@ list, ul {
         </list>
     </ul>
 
-<div class="section">Volunteer Experience</div><hr class="solid">
-
-<div class='subh'>Researcher</div>
+    <div class='subh'>Researcher</div>
     <div class='sub'>
         <i class="fa fa-at" aria-hidden="true" style="margin-right: 5px"></i>
         Advanced Machine Learning Lab
@@ -291,37 +304,8 @@ list, ul {
         From 2020 - Present
     </p>
     <ul><list>
-        <li>Assisting fellow researchers for research tasks.</li>
-        <li>Collaborating with labs and team-based.</li>
-    </list></ul>
-
-<div class='subh'>Problem setter & judge</div>
-    <div class='sub'>
-        <i class="fa fa-at" aria-hidden="true" style="margin-right: 5px"></i>
-        Bangladesh University of Business and Technology
-    </div>
-    <p>
-        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 5px"></i>
-        From 2019 - Present
-    </p>
-    <ul><list>
-        <li>Planning & managing intra-university programming contests.</li>
-        <li>Writing & collecting problem-sets and conducting critical problem-set selection tasks.</li>
-    </list></ul>
-
-
-<div class='subh'>Conveiner</div>
-    <div class='sub'>
-        <i class="fa fa-at" aria-hidden="true" style="margin-right: 5px"></i>
-        Competitive Programming Community (BUBT)
-    </div>
-    <p>
-        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 5px"></i>
-        From 2019 - Present
-    </p>
-    <ul><list>
-        <li>Planning semester-wise schedule for training classes.</li>
-        <li>Training and guiding junior competitive programmers.</li>
+        <li>Assisting fellow researchers for research and writing papers.</li>
+        <li>Collaborating with labs and team-based research tasks.</li>
     </list></ul>
 
 
@@ -350,7 +334,9 @@ list, ul {
     <div id="autoembedder" class="abstract"><p>
         Clustering is widely used in unsupervised learning method that deals with unlabeled data. Deep clustering has become a popular study area that relates clustering with Deep Neural Network (DNN) architecture. Deep clustering method downsamples high dimensional data, which may also relate clustering loss. Deep clustering is also introduced in semi-supervised learning (SSL). Most SSL methods depend on pairwise constraint information, which is a matrix containing knowledge if data pairs can be in the same cluster or not. This paper introduces a novel embedding system named AutoEmbedder, that downsamples higher dimensional data to clusterable embedding points. To the best of our knowledge, this is the first research endeavor that relates to traditional classifier DNN architecture with a pairwise loss reduction technique. The training process is semi-supervised and uses Siamese network architecture to compute pairwise constraint loss in the feature learning phase. The AutoEmbedder outperforms most of the existing DNN based semi-supervised methods tested on famous datasets.
     </p></div>
+</div>
 
+<div class="article">
     <div class="subsub">
         Exploring optimal control of epidemic spread using reinforcement learning
     </div>      
@@ -370,7 +356,9 @@ list, ul {
     <div id="epidemic" class="abstract"><p>
         Pandemic defines the global outbreak of a disease having a high transmission rate. The impact of a pandemic situation can be lessened by restricting the movement of the mass. However, one of its concomitant circumstances is an economic crisis. In this article, we demonstrate what actions an agent (trained using reinforcement learning) may take in different possible scenarios of a pandemic depending on the spread of disease and economic factors. To train the agent, we design a virtual pandemic scenario closely related to the present COVID-19 crisis. Then, we apply reinforcement learning, a branch of artificial intelligence, that deals with how an individual (human/machine) should interact on an environment (real/virtual) to achieve the cherished goal. Finally, we demonstrate what optimal actions the agent perform to reduce the spread of disease while considering the economic factors. In our experiment, we let the agent find an optimal solution without providing any prior knowledge. After training, we observed that the agent places a long length lockdown to reduce the first surge of a disease. Furthermore, the agent places a combination of cyclic lockdowns and short length lockdowns to halt the resurgence of the disease. Analyzing the agent’s performed actions, we discover that the agent decides movement restrictions not only based on the number of the infectious population but also considering the reproduction rate of the disease. The estimation and policy of the agent may improve the human-strategy of placing lockdown so that an economic crisis may be avoided while mitigating an infectious disease.
     </p></div>
+</div>
 
+<div class="article">
     <div class="subsub">
         FabricNet: A fiber recognition architecture using ensemble ConvNets
     </div>      
@@ -393,7 +381,9 @@ list, ul {
     <div id="fabricnet" class="abstract"><p>
         Fabric is a planar material composed of textile fibers. Textile fibers are generated from many natural sources; including plants, animals, minerals, and even, it can be synthetic. A particular fabric may contain different types of fibers that pass through a complex production process. Fiber identification is usually carried out through chemical tests and microscopic tests. However, these testing processes are complicated as well as time-consuming. We propose FabricNet, a pioneering approach for the image-based textile fiber recognition system, which may have a revolutionary impact from individual to the industrial fiber recognition process. The FabricNet can recognize a large scale of fibers by only utilizing a surface image of fabric. The recognition system is constructed using a distinct category of class-based ensemble convolutional neural network (CNN) architecture. The experiment is conducted on recognizing 50 different types of textile fibers. This experiment includes a significantly large number of unique textile fibers than previous research endeavors to the best of our knowledge. We experiment with popular CNN architectures that include Inception, ResNet, VGG, MobileNet, DenseNet, and Xception. Finally, the experimental results demonstrate that FabricNet outperforms the state-of-the-art popular CNN architectures by reaching an accuracy of 84% and F1-score of 90%.
     </p></div>
+</div>
 
+<div class="article">
     <div class="subsub">
         BanglaWriting: A multi-purpose offline Bangla handwriting dataset
     </div>      
@@ -416,7 +406,9 @@ list, ul {
     <div id="banglawriting" class="abstract"><p>
         This article presents a Bangla handwriting dataset named BanglaWriting that contains single-page handwritings of 260 individuals of different personalities and ages. Each page includes bounding-boxes that bounds each word, along with the unicode representation of the writing. This dataset contains 21,234 words and 32,787 characters in total. Moreover, this dataset includes 5,470 unique words of Bangla vocabulary. Apart from the usual words, the dataset comprises 261 comprehensible overwriting and 450 incomprehensible overwriting. All of the bounding boxes and word labels are manually-generated. The dataset can be used for complex optical character/word recognition, writer identification, and handwritten word segmentation. Furthermore, this dataset is suitable for extracting age-based and gender-based variation of handwriting.
     </p></div>
+</div>
 
+<div class="article">
     <div class="subsub">
         A lightweight speaker recognition system using timbre properties
     </div>   
@@ -439,7 +431,9 @@ list, ul {
     <div id="lightspeaker" class="abstract"><p>
         Speaker recognition is an active research area that contains notable usage in biometric security and authentication system. Currently, there exist many well-performing models in the speaker recognition domain. However, most of the advanced models implement deep learning that requires GPU support for real-time speech recognition, and it is not suitable for low-end devices. In this paper, we propose a lightweight text-independent speaker recognition model based on random forest classifier. It also introduces new features that are used for both speaker verification and identification tasks. The proposed model uses human speech based timbral properties as features that are classified using random forest. Timbre refers to the very basic properties of sound that allow listeners to discriminate among them. The prototype uses seven most actively searched timbre properties, boominess, brightness, depth, hardness, roughness, sharpness, and warmth as features of our speaker recognition model. The experiment is carried out on speaker verification and speaker identification tasks and shows the achievements and drawbacks of the proposed model. In the speaker identification phase, it achieves a maximum accuracy of 78%. On the contrary, in the speaker verification phase, the model maintains an accuracy of 80% having an equal error rate (ERR) of 0.24.
     </p></div>
+</div>
 
+<div class="article">
     <div class="subsub">
         Full dynamic transmission model and threat analysis of COVID-19
     </div>   
@@ -460,7 +454,9 @@ list, ul {
     <div id="covid19trans" class="abstract"><p>
         No doubt, the COVID-19 outbreak exemplifies ongoing biothreats to humanity as a whole. This necessitates an emergency response towards its remedy because it is heightened in importance and compressed in the time frame. Consequently, significant research efforts have been noticed to tackle this pressing crisis. In this paper, we endeavor to formulate a mathematical model of the transmission of COVID-19. The dynamics of the disease are illustrated by a compartmental model that involves differential equations. The paper also exhibits a mathematical estimation of the future threats induced by COVID-19 universally, which is computed based on the immediate statistical data. We compute the current transmission rate of COVID-19 to be 0.0462, considering the current fertility and mortality of the world population. From the threat estimation, it is expected that the COVID-19 may eliminate around 30% of the current population by the next three years, and it may obliterate nearly 43% of the current population by the next five years.
     </p></div><br>
+</div>
 
+<div class="article">
 <div class='section'>Conferences</div><hr class="solid">
     <div class="subsub">
         Human Abnormality Detection Based on Bengali Text
@@ -483,8 +479,9 @@ list, ul {
     <div id="abnormality" class="abstract"><p>
         In the field of natural language processing and human-computer interaction, human attitudes and sentiments have attracted the researchers. However, in the field of human-computer interaction, human abnormality detection has not been investigated extensively and most works depend on image-based information. In natural language processing, effective meaning can potentially convey by all words. Each word may bring out difficult encounters because of their semantic connection with ideas or categories. In this paper, an efficient and effective human abnormality detection model is introduced, that only uses Bengali text. This proposed model can recognize whether the person is in a normal or abnormal state by analyzing their typed Bengali text. To the best of our knowledge, this is the first attempt in developing a text based human abnormality detection system. We have created our Bengali dataset (contains 2000 sentences) that is generated by voluntary conversations. We have performed the comparative analysis by using Naive Bayes and Support Vector Machine as classifiers. Two different feature extraction techniques count vector, and TF-IDF is used to experiment on our constructed dataset. We have achieved a maximum 89% accuracy and 92% F1-score with our constructed dataset in our experiment.
     </p></div>
+</div>
 
-<br>
+<div class="article">
     <div class="subsub">
         An Evolution of CNN Object Classifiers on Low-Resolution Images
     </div>
@@ -506,9 +503,35 @@ list, ul {
     <div id="lowres" class="abstract"><p>
         Object classification is a significant task in computer vision. It has become an effective research area as an important aspect of image processing and the building block of image localization, detection, and scene parsing. Object classification from low-quality images is difficult for the variance of object colors, aspect ratios, and cluttered backgrounds. The field of object classification has seen remarkable advancements, with the development of deep convolutional neural networks (DCNNs). Deep neural networks have been demonstrated as very powerful systems for facing the challenge of object classification from high-resolution images, but deploying such object classification networks on the embedded device remains challenging due to the high computational and memory requirements. Using high-quality images often causes high computational and memory complexity, whereas low-quality images can solve this issue. Hence, in this paper, we investigate an optimal architecture that accurately classifies low-quality images using DCNNs architectures. To validate different baselines on lowquality images, we perform experiments using webcam captured image datasets of 10 different objects. In this research work, we evaluate the proposed architecture by implementing popular CNN architectures. The experimental results validate that the MobileNet architecture delivers better than most of the available CNN architectures for low-resolution webcam image datasets.
     </p></div>
-<br>
+</div>
+
+<div class="article">
+    <div class="subsub">
+        End-to-End Optical Character Recognition for Bengali Handwritten Words
+    </div>
+    <div class="author_list">
+        <span class="authors">
+            Farisa Benta Safir, Abu Quwsar Ohi, MF Mridha, Muhammad Mostafa Monowar, Md. Abdul Hamid
+        </span>
+    </div>
+    <div class="link">
+        <a href="javascript:toggle('lowres')">Abstract</a>
+    </div>
+    <div class="link">
+      <a href="#" target="_blank" rel="noopener noreferrer">arXiv</a>
+    </div>
+    <div class="link">
+      <a href="#" target="_blank" rel="noopener noreferrer">Conference</a>
+    </div>
+
+    <div id="lowres" class="abstract"><p>
+        Will be available soon...
+    </p></div>
+</div>
+
 <!--<div class='subh'>Book Chapters</div><hr class="dashed"> -->
 <div class='section'>Book Chapters</div><hr class="solid">
+<div class="article">
     <div class="subsub">
         A Multi-Plant Disease Diagnosis Method using Convolutional Neural Network
     </div>
@@ -522,11 +545,15 @@ list, ul {
     </div>
     <div class="link">
       <a href="https://arxiv.org/abs/2011.05151" target="_blank" rel="noopener noreferrer">arXiv</a>
-    </div><br>
+    </div>
+    <div class="link">
+      <a href="https://doi.org/10.1007/978-981-33-6424-0_7" target="_blank" rel="noopener noreferrer">Book</a>
+    </div>
 
     <div id="allplantdisease" class="abstract"><p>
         A disease that limits a plant from its maximal capacity is defined as plant disease. From the perspective of agriculture, diagnosing plant disease is crucial, as diseases often limit plants' production capacity. However, manual approaches to recognize plant diseases are often temporal, challenging, and time-consuming. Therefore, computerized recognition of plant diseases is highly desired in the field of agricultural automation. Due to the recent improvement of computer vision, identifying diseases using leaf images of a particular plant has already been introduced. Nevertheless, the most introduced model can only diagnose diseases of a specific plant. Hence, in this chapter, we investigate an optimal plant disease identification model combining the diagnosis of multiple plants. Despite relying on multi-class classification, the model inherits a multilabel classification method to identify the plant and the type of disease in parallel. For the experiment and evaluation, we collected data from various online sources that included leaf images of six plants, including tomato, potato, rice, corn, grape, and apple. In our investigation, we implement numerous popular convolutional neural network (CNN) architectures. The experimental results validate that the Xception and DenseNet architectures perform better in multi-label plant disease classification tasks. Through architectural investigation, we imply that skip connections, spatial convolutions, and shorter hidden layer connectivity cause better results in plant disease classification.
     </p></div>
+</div>
 
 <!--
 <br><br>
@@ -571,7 +598,7 @@ list, ul {
             The dataset contained sentences with appropriate labels (normal/abnormal). Multiple specialists appropriately classified the sentences of the dataset. The dataset is generated in a CSV format. The CSV file contains two columns, "Abnormality" and "Sentence". Each Bengali sentence contains two target values, 1 (abnormal) or 0 (normal). The dataset comprises 14414 Bengali sentences, where 14312 sentences are normal, and 102 sentences are abnormal. For more details, please inspect the source paper of the dataset.
         </p></div>
 --->
-</div>
+
 
 <div class="section">Achievements</div>
 <hr class="solid">
@@ -622,7 +649,7 @@ list, ul {
     </div>
     <hr class="dotted">
     <div style="display: flex; align-items: center;">
-    <i class="fa fa-trophy fa-xl" aria-hidden="true" style="margin-right: 5px; font-size: 20px"></i> 
+    <i class="fa fa-chart-line fa-xl" aria-hidden="true" style="margin-right: 5px; font-size: 20px"></i> 
     <div>
         <span style="font-size: 16px margin: 0px padding: 0px"><strong>Problem Solver</strong></span>
         <br>
@@ -641,6 +668,38 @@ list, ul {
     <li><a href="https://codeforces.com/profile/QuwsarOhi" target="_blank" rel="noopener noreferrer">CodeForces</a> highest rating 1581.</li>
     <li><a href="https://www.codechef.com/users/quwsarohi" target="_blank" rel="noopener noreferrer">CodeChef</a> highest rating 1948.</li>
 </div></ul>
+
+<div class="section">Volunteer Experience</div><hr class="solid">
+
+<div class='subh'>Problem setter & judge</div>
+    <div class='sub'>
+        <i class="fa fa-at" aria-hidden="true" style="margin-right: 5px"></i>
+        Bangladesh University of Business and Technology
+    </div>
+    <p>
+        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 5px"></i>
+        From 2019 - Present
+    </p>
+    <ul><list>
+        <li>Planning & managing intra-university programming contests.</li>
+        <li>Writing & collecting problem-sets and conducting critical problem-set selection tasks.</li>
+    </list></ul>
+
+
+<div class='subh'>Conveiner</div>
+    <div class='sub'>
+        <i class="fa fa-at" aria-hidden="true" style="margin-right: 5px"></i>
+        Competitive Programming Community (BUBT)
+    </div>
+    <p>
+        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 5px"></i>
+        From 2019 - Present
+    </p>
+    <ul><list>
+        <li>Planning semester-wise schedule for training classes.</li>
+        <li>Training and guiding junior competitive programmers.</li>
+    </list></ul>
+
 
 <!--
 <div class="section">Personal projects</div>
